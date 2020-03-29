@@ -1,10 +1,6 @@
 import makeCarousel from 'react-reveal/makeCarousel';
 import React from 'react';
-// we'll need the Slide component for sliding animations
-// but you can use any other effect
 import Slide from 'react-reveal/Slide';
-// we'll use styled components for this tutorial
-// but you can use any other styling options ( like plain old css )
 import styled, { css } from 'styled-components';
 
 const Container = styled.div`
@@ -20,10 +16,7 @@ const Container = styled.div`
 // ]
 
 class Carousel extends React.Component {
-     img = [
-        'assets/img/jessy.jpg', 
-        'assets/img/jessy2.jpg', 
-    ]
+    
     render () {
         const CarouselUI = ({ children }) => <Container>{children}</Container>;
     const Carousel = makeCarousel(CarouselUI);
