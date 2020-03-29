@@ -8,9 +8,9 @@ import Carousel from './components/carousel';
 function App() {
   return (
     <div className="App">
-      <header>
+      {/* <header>
         <h1 className="header">JESSICA'S DIARY</h1>
-      </header>
+      </header> */}
       <Carousel />
       {/* <div className="images">
         <div className="img">

@@ -8,24 +8,11 @@ import Slide from 'react-reveal/Slide';
 import styled, { css } from 'styled-components';
 
 const Container = styled.div`
-  border: 1px solid red;
   position: relative;
   overflow: hidden;
   width: 100vw;
   height: 100vh;
 `;
-
-// const Courosel = () => {
-
-//     const CarouselUI = ({ children }) => <Container>{children}</Container>;
-//     const Carousel = makeCarousel(CarouselUI);
-    
-//     render (
-      
-//     );
-// }
-
-// export default Courosel;
 
 class Carousel extends React.Component {
     render () {
@@ -42,6 +29,48 @@ class Carousel extends React.Component {
         <Slide right>
           <div>
           <img style={{width: '100%', height: '100%'}} src="assets/img/jessy2.jpg" alt="img" />
+            <p>Slide Description</p>
+          </div>
+        </Slide>
+        <Slide right>
+          <div>
+          <img style={{width: '100%', height: '100%'}} src="assets/img/jessy6.jpg" alt="img" />
+            <p>Slide Description</p>
+          </div>
+        </Slide>
+        <Slide right>
+          <div>
+          <img style={{width: '100%', height: '100%'}} src="assets/img/jessy4.jpg" alt="img" />
+            <p>Slide Description</p>
+          </div>
+        </Slide>
+        <Slide right>
+          <div>
+          <img style={{width: '100%', height: '100%'}} src="assets/img/jessy5.jpg" alt="img" />
+            <p>Slide Description</p>
+          </div>
+        </Slide>
+        <Slide right>
+          <div>
+          <img style={{width: '100%', height: '100%'}} src="assets/img/jessy7.jpg" alt="img" />
+            <p>Slide Description</p>
+          </div>
+        </Slide>
+        <Slide right>
+          <div>
+          <img style={{width: '100%', height: '100%'}} src="assets/img/jessy8.jpg" alt="img" />
+            <p>Slide Description</p>
+          </div>
+        </Slide>
+        <Slide right>
+          <div>
+          <img style={{width: '100%', height: '100%'}} src="assets/img/jessy9.jpg" alt="img" />
+            <p>Slide Description</p>
+          </div>
+        </Slide>
+        <Slide right>
+          <div>
+          <img style={{width: '100%', height: '100%'}} src="assets/img/jessy10.jpg" alt="img" />
             <p>Slide Description</p>
           </div>
         </Slide>

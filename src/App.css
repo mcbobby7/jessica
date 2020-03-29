@@ -22,6 +22,7 @@
   padding-top: 30px;
   position: sticky;
   top: 0;
+  left: 0;
 }
 
 .images {
@@ -32,13 +33,13 @@
 
 }
 
-img {
+/* img {
   width: 150px;
   height: 150px;
   margin: 10px;
   transition: all .6s ease-in-out;
   border-radius: 8px;
-}
+} */
 
 /* img:hover {
   transform: scale(1.2);
