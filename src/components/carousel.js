@@ -10,13 +10,21 @@ const Container = styled.div`
   height: 100vh;
 `;
 
-// const img = [
-//     'assets/img/jessy.jpg', 
-//     'assets/img/jessy2.jpg', 
-// ]
-
 class Carousel extends React.Component {
-    
+     img = [
+        'assets/img/jessy2.jpg', 
+        'assets/img/jessy1.jpg', 
+        'assets/img/jessy5.jpg',
+        'assets/img/jessy4.jpg',
+        'assets/img/jessy9.jpg',
+        'assets/img/jessy6.jpg',
+        'assets/img/jessy7.jpg',
+        'assets/img/jessy17.jpg',
+        'assets/img/jessy16.jpg',
+        'assets/img/jessy13.jpg',
+        'assets/img/jessy14.jpg',
+        'assets/img/jessy15.jpg',
+    ]
     render () {
         const CarouselUI = ({ children }) => <Container>{children}</Container>;
     const Carousel = makeCarousel(CarouselUI);
@@ -26,7 +34,6 @@ class Carousel extends React.Component {
         <Slide right>
         <div>
         <img style={{width: '100%', height: '100%'}} src={img} alt="img" />
-          <p>Slide Description</p>
         </div>
       </Slide>
         ))}
