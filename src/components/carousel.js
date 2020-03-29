@@ -38,6 +38,7 @@ class Carousel extends React.Component {
                     <div>
                     <img style={{width: '100%', height: '100%'}} src={img} alt="img" />
                     </div>
+                    <div className="footer"></div>
                 </Slide>
             ))}
       </Carousel>
