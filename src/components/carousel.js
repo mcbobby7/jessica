@@ -32,7 +32,7 @@ class Carousel extends React.Component {
 
       return (
 
-        <Carousel defaultWait={1000} /*wait for 1000 milliseconds*/ >
+        <Carousel defaultWait={2000} /*wait for 1000 milliseconds*/ >
             {this.img.map((img, index) => (
                 <Slide right>
                     <div>
