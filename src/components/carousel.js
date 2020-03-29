@@ -1,7 +1,7 @@
 import makeCarousel from 'react-reveal/makeCarousel';
 import React from 'react';
 import Slide from 'react-reveal/Slide';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 const Container = styled.div`
   position: relative;
@@ -26,66 +26,20 @@ class Carousel extends React.Component {
         'assets/img/jessy15.jpg',
     ]
     render () {
+
         const CarouselUI = ({ children }) => <Container>{children}</Container>;
-    const Carousel = makeCarousel(CarouselUI);
+        const Carousel = makeCarousel(CarouselUI);
+
       return (
+
         <Carousel defaultWait={1000} /*wait for 1000 milliseconds*/ >
             {this.img.map((img, index) => (
-        <Slide right>
-        <div>
-        <img style={{width: '100%', height: '100%'}} src={img} alt="img" />
-        </div>
-      </Slide>
-        ))}
-        
-        {/* <Slide right>
-          <div>
-          <img style={{width: '100%', height: '100%'}} src="assets/img/jessy2.jpg" alt="img" />
-            <p>Slide Description</p>
-          </div>
-        </Slide>
-        <Slide right>
-          <div>
-          <img style={{width: '100%', height: '100%'}} src="assets/img/jessy6.jpg" alt="img" />
-            <p>Slide Description</p>
-          </div>
-        </Slide>
-        <Slide right>
-          <div>
-          <img style={{width: '100%', height: '100%'}} src="assets/img/jessy4.jpg" alt="img" />
-            <p>Slide Description</p>
-          </div>
-        </Slide>
-        <Slide right>
-          <div>
-          <img style={{width: '100%', height: '100%'}} src="assets/img/jessy5.jpg" alt="img" />
-            <p>Slide Description</p>
-          </div>
-        </Slide>
-        <Slide right>
-          <div>
-          <img style={{width: '100%', height: '100%'}} src="assets/img/jessy7.jpg" alt="img" />
-            <p>Slide Description</p>
-          </div>
-        </Slide>
-        <Slide right>
-          <div>
-          <img style={{width: '100%', height: '100%'}} src="assets/img/jessy8.jpg" alt="img" />
-            <p>Slide Description</p>
-          </div>
-        </Slide>
-        <Slide right>
-          <div>
-          <img style={{width: '100%', height: '100%'}} src="assets/img/jessy9.jpg" alt="img" />
-            <p>Slide Description</p>
-          </div>
-        </Slide>
-        <Slide right>
-          <div>
-          <img style={{width: '100%', height: '100%'}} src="assets/img/jessy10.jpg" alt="img" />
-            <p>Slide Description</p>
-          </div>
-        </Slide> */}
+                <Slide right>
+                    <div>
+                    <img style={{width: '100%', height: '100%'}} src={img} alt="img" />
+                    </div>
+                </Slide>
+            ))}
       </Carousel>
       );
     }
