@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Carousel from './components/carousel';
 
 
 
@@ -10,7 +11,8 @@ function App() {
       <header>
         <h1 className="header">JESSICA'S DIARY</h1>
       </header>
-      <div className="images">
+      <Carousel />
+      {/* <div className="images">
         <div className="img">
         <img src="assets/img/jessy.jpg" alt="img" />
         <img src="assets/img/jessy1.jpg" alt="img" />
@@ -31,7 +33,7 @@ function App() {
         <img src="assets/img/jessy19.jpg" alt="img" />
         <img src="assets/img/jessy20.jpg" alt="img" />
         </div>
-      </div>
+      </div> */}
   
     </div>
   );

@@ -20,6 +20,8 @@
   font-size: 40px;
   font-weight: 1000;
   padding-top: 30px;
+  position: sticky;
+  top: 0;
 }
 
 .images {
@@ -38,9 +40,9 @@ img {
   border-radius: 8px;
 }
 
-img:hover {
+/* img:hover {
   transform: scale(1.2);
-}
+} */
 
 .img {
   width: 100%;
