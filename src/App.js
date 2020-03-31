@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Carousel from './components/carousel';
+import Spin from 'react-reveal/Spin';
 
 
 
@@ -8,6 +9,9 @@ import Carousel from './components/carousel';
 function App() {
   return (
     <div className="App">
+      {/* <Spin> */}
+        <h2 className="name"><Spin>JESSICA</Spin></h2>
+      {/* </Spin> */}
       <Carousel /> 
     </div>
   );

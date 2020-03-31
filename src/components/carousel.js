@@ -1,6 +1,7 @@
 import makeCarousel from 'react-reveal/makeCarousel';
 import React from 'react';
 import Slide from 'react-reveal/Slide';
+import Flash from 'react-reveal/Flash';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -68,16 +69,16 @@ class Carousel extends React.Component {
 
       return (
 
-        <Carousel defaultWait={3000}>
+        <Carousel defaultWait={4000}>
             {this.img.map((img, index) => (
                 <Slide right>
                     <div>
                       <img style={{width: '100%', height: '100%'}} src={img.img} alt="img" />
                     </div>
                     <div className="footer">
-                      <Slide right cascade>
+                      <Flash right cascade>
                         <h1><p>{img.text}</p></h1>
-                      </Slide>
+                      </Flash>
                     </div>
                 </Slide>
             ))}
